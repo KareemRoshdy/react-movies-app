@@ -1,0 +1,105 @@
+.movie-details-container {
+  border-bottom: 1px solid var(--oxford-blue-50);
+  margin-bottom: 50px;
+}
+
+.details-head .movie-title {
+  margin-bottom: 15px;
+}
+
+.movie-details-info {
+  color: #939393;
+  font-size: 14px;
+}
+
+.movie-details-info svg {
+  color: var(--light-azure);
+}
+
+.movie-details-image {
+  max-height: 600px;
+  width: max-content;
+  border-radius: 10px;
+  margin: 40px auto;
+  object-fit: contain;
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+.movie-details .description {
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.comments .user-image {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.comments form {
+  margin-bottom: 30px;
+  border: 2px solid var(--oxford-blue-50);
+  padding: 6px;
+  border-radius: 5px;
+  transition: 0.1s;
+}
+
+.comments form.active {
+  border-color: var(--light-azure);
+}
+
+.comments form .input-group {
+  width: 100%;
+  margin-right: 15px;
+}
+
+.comments form input {
+  width: 100%;
+  height: 100%;
+  padding: 7px 0;
+  color: var(--white);
+  font-size: 14px;
+}
+
+.comments form button {
+  height: 100%;
+  padding: 7px 20px;
+  background: var(--light-azure);
+  border-radius: 5px;
+  color: var(--white);
+  font-size: 14px;
+  width: max-content;
+}
+
+.comments-head {
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+.comment-box {
+  margin-bottom: 40px;
+}
+
+.comment-body {
+  width: 100%;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--oxford-blue-50);
+}
+
+.comment-body .username {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.comment-body .username span {
+  font-size: 12px;
+  font-weight: normal;
+  color: #939393;
+}
+
+.comment-body .comment-text {
+  font-size: 13px;
+  color: var(--white);
+}

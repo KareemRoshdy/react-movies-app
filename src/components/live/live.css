@@ -1,0 +1,78 @@
+.live-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.live-card {
+  cursor: pointer;
+}
+
+.card-head {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+  margin-bottom: 15px;
+  border-radius: 15px;
+}
+
+.card-head::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 20%, #000a);
+}
+
+.card-head:hover img {
+  transform: scale(1.1);
+}
+
+.live-card .live-badge,
+.live-card .total-viewers {
+  position: absolute;
+  left: 30px;
+  padding: 5px 10px;
+  z-index: 10;
+  border-radius: 10px;
+}
+
+.live-card .live-badge {
+  top: 30px;
+  font-size: 12px;
+  font-weight: 500;
+  background: var(--live-indicator);
+}
+
+.live-card .total-viewers {
+  bottom: 30px;
+  font-weight: 600;
+  font-size: 15px;
+  background: var(--oxford-blue-50);
+}
+
+.live-card .play svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  font-size: 6rem;
+  z-index: 100;
+}
+
+.card-head:hover .play svg {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.live-card .avatar {
+  width: 40px;
+  border-radius: 10px;
+}
+
+.live-card .card-title {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.live-card:hover .card-title {
+  color: var(--light-azure);
+}

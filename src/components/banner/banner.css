@@ -1,0 +1,47 @@
+/* .banner {
+  padding: 20px 0;
+} */
+
+.banner-container {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.banner-content {
+  position: absolute;
+  bottom: 40px;
+  left: 60px;
+  right: 60px;
+}
+
+.banner-container .banner-image {
+  object-position: top;
+}
+
+.banner-container:hover .banner-image {
+  transform: scale(1.1);
+}
+
+.banner-content-info {
+  margin-bottom: 40px;
+}
+
+.banner-content-info > div > svg {
+  color: var(--light-azure);
+}
+
+.banner-title {
+  font-size: 40px;
+  color: var(--white);
+  text-shadow: 2px 0 2px #0007;
+  width: fit-content;
+}
+
+@media (width <= 768px) {
+  .banner {
+    display: none;
+  }
+}

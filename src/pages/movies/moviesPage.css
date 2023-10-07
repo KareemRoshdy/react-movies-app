@@ -1,0 +1,12 @@
+.pagination-container span {
+  padding: 15px 20px;
+  border: 1px solid var(--oxford-blue);
+  cursor: pointer;
+  color: var(--white);
+  transition: 0.3s;
+}
+
+.pagination-container span.active,
+.pagination-container span:hover {
+  background: var(--azure);
+}
