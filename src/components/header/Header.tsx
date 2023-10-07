@@ -90,7 +90,10 @@ const Header = () => {
             {open ? <BsXLg /> : <BsSearch />}
           </span>
 
-          <form className={`search-form flex align-center ${open && "open"}`}>
+          <form
+            onSubmit={(e) => e.preventDefault()}
+            className={`search-form flex align-center ${open && "open"}`}
+          >
             <input
               type="search"
               name="search"
